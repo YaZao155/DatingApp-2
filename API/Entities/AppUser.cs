@@ -22,7 +22,7 @@ namespace API.Entities
         public string Interests { get; set; }
         public string City { get; set; }
         public string Country { get; set; }
-        public ICollection<Photo> Photos { get; set; }
+        public ICollection<Photo> Photos { get; set; } = new List<Photo>();
 
         // public int GetAge() {
         //     return DateOfBirth.CalculateAge();
